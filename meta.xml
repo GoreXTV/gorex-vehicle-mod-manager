@@ -1,0 +1,20 @@
+<meta>
+    <info author="GoreX" name="Vehicle Mod Manager" version="1.0.0" type="script"
+          description="Mod-Library fuer Infernus/Backlights/Wheels mit Preview, Suche, Favoriten, Creator Mode" />
+
+    <!-- pathListDir (Server) gibt es erst ab MTA 1.6.0 r22470 -->
+    <min_mta_version server="1.6.0-9.22470" client="1.6.0-9.22470" />
+
+    <script src="config.lua"  type="shared" />
+    <script src="shared.lua"  type="shared" />
+    <script src="server.lua"  type="server" />
+    <script src="client.lua"  type="client" />
+    <script src="gui.lua"     type="client" />
+
+    <!-- Nur der Shader wird beim Verbinden geladen. Die Mods selbst stehen NICHT in der meta.xml,
+         sie werden bei Bedarf per Latent-Event gestreamt und im Client-Cache abgelegt. -->
+    <file src="shaders/replace.fx" type="client" />
+
+    <!-- Optional: eigene UI-Schrift. TTF nach fonts/ kopieren, hier eintragen und in config.lua (UI.fontFile) setzen.
+    <file src="fonts/ui.ttf" type="client" /> -->
+</meta>

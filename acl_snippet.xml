@@ -1,0 +1,16 @@
+<!-- In die ACL des Servers (mods/deathmatch/acl.xml) einfuegen, danach "reloadacl" bzw. Server-Neustart.
+     "DEINACCOUNT" durch deinen MTA-Accountnamen ersetzen (Login per /login). -->
+
+<group name="Creator">
+    <acl name="Creator"/>
+    <object name="user.DEINACCOUNT"/>
+</group>
+
+<acl name="Creator">
+    <!-- Panel benutzen (nur fuer dich selbst wechseln) -->
+    <right name="command.vehiclemod" access="true"/>
+    <!-- Mods fuer ALLE Spieler aktivieren (Scope: GLOBAL). Nur vergeben, wenn gewuenscht. -->
+    <right name="command.vehiclemod_global" access="true"/>
+</acl>
+
+<!-- Alternative: Gruppe "Admin" / "Mapper" (in config.lua unter Config.Permission.groups) genuegt ebenfalls. -->

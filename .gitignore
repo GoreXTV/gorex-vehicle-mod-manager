@@ -1,0 +1,44 @@
+# Local/user data
+userdata.json
+userdata*.json
+
+# Generated/client cache
+cache_*
+*.cache
+
+# Development backups
+backup_*/
+backups/
+*.bak
+*.backup
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Logs / debug
+*.log
+debug.log
+
+# Local MTA installation artifacts
+mods/deathmatch/resources/
+
+# Keep mod library folders but ignore binary mod assets by default.
+# Remove these rules if you have redistribution permission for specific assets.
+mods/**/*.dff
+mods/**/*.txd
+mods/**/*.col
+mods/**/*.dds
+mods/**/*.tga
+mods/**/*.png
+mods/**/*.jpg
+mods/**/*.jpeg

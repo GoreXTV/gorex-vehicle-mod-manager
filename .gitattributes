@@ -1,0 +1,13 @@
+*.lua text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.xml text eol=lf
+*.ps1 text eol=crlf
+*.dff binary
+*.txd binary
+*.col binary
+*.dds binary
+*.tga binary
+*.png binary
+*.jpg binary
+*.jpeg binary
